@@ -44,7 +44,7 @@ let gradeTotal = 0
 
 function makeGrades(grading) {
     for (let i = 0; i < grades.length; i++) {
-        gradeTotal.push(grades.score + grades.score)
+        gradeTotal = grades.score += grades[i]
     }
 }
 
