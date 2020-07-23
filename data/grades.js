@@ -28,3 +28,7 @@ grades = [{
     studentName: 'Timmy',
     score: 60
 }]
+
+module.exports = {
+    grades
+}
