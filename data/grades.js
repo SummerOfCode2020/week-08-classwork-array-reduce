@@ -1,10 +1,10 @@
 let grades = [{
     assignmentName: 'Array Reverser',
-    studentName: 'Peter',
+    studentName: 'Nick',
     score: 95
 }, {
     assignmentName: 'Number Summer',
-    studentName: 'Julie',
+    studentName: 'Jessica',
     score: 100
 }, {
     assignmentName: 'Area Finder',
@@ -12,7 +12,7 @@ let grades = [{
     score: 100
 }, {
     assignmentName: 'Week04',
-    studentName: 'Alvin',
+    studentName: 'Nick',
     score: 99
 }, {
     assignmentName: 'Week05',

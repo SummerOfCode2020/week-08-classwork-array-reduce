@@ -30,7 +30,7 @@
 
  */
     let { grades } = require('./data/grades')
-    console.log(grades)
+    // console.log(grades)
  /**
 
     Looping using your preferred looping syntax and updating a shared variable
@@ -43,7 +43,7 @@
 
  let gradeTotal = 0
  grades.forEach(grade => gradeTotal += grade.score)
- console.log(gradeTotal)
+ // console.log(gradeTotal)
 
  /**
  
@@ -54,4 +54,7 @@
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+   gradeTotal = grades.reduce((acc, grade) => {
+    return acc + grade.score
+  }, 0)
+  console.log(gradeTotal) 
