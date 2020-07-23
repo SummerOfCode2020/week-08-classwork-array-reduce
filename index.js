@@ -16,7 +16,7 @@
         
         Declare and initialize an array named `grades`
  */
-const grades = [
+const studentGrades = [
     { assignmentName: 'Assignment 01', studentName: 'Ben', score: 50 },
     { assignmentName: 'Assignment 02', studentName: 'Jerry', score: 80 },
     { assignmentName: 'Assignment 02', studentName: 'Ben', score: 95 },
