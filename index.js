@@ -29,8 +29,15 @@
             - Use 2 distinct student names
 
  */
-
- /**
+let grades =[{assignmentName: "week01", studentName: "James", score: 10},
+            {assignmentName: "week02", studentName: "paul", score: 20},
+            {assignmentName: "week03", studentName: "Luc", score: 30}
+,           {assignmentName: "week04", studentName: "Mathieu", score:40},
+            {assignmentName: "week05", studentName: "Marc", score: 50}]
+ for (i= 0; i > grades.length; i++ ) {
+     console.log(grades)
+  }
+            /**
 
     Looping using your preferred looping syntax and updating a shared variable
  
