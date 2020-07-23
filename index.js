@@ -31,14 +31,16 @@
  */
 let grades =[{assignmentName: "week01", studentName: "James", score: 10},
             {assignmentName: "week02", studentName: "paul", score: 20},
-            {assignmentName: "week03", studentName: "Luc", score: 30}
+            {assignmentName: "week03", studentName: "James", score: 30}
 ,           {assignmentName: "week04", studentName: "Mathieu", score:40},
-            {assignmentName: "week05", studentName: "Marc", score: 50}]
- for (i= 0; i > grades.length; i++ ) {
-     console.log(grades)
-  }
-            /**
+            {assignmentName: "week05", studentName: "paul", score: 50}]
+            
+console.log({grade})
+ 
+  let { grades } = require(`./data/grades`)
 
+            /**
+co
     Looping using your preferred looping syntax and updating a shared variable
  
     2) Loop through the grades data using a for loop.
@@ -46,8 +48,14 @@ let grades =[{assignmentName: "week01", studentName: "James", score: 10},
 
  */
  const gradeTotal = 0
+ 
 
-
+ for (let i= 0; i > grades.length; i++ ) {
+    
+  
+   gradeTotal += grade.score[i]
+ }
+ console. log({gradeTotal})
  /**
  
     Using reduce
