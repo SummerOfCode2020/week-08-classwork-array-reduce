@@ -31,10 +31,14 @@ let grades = [
   }
 ]
 
-for(let i = 0; i < grades.length; i++) {
-  gradeTotal = gradeTotal + grades[i].score
+const calculateTotalGrade = for(let i = 0; i < grades.length; i++) {
+  if(gradeTotal isNaN) {
+    gradeTotal = 0;
+    gradeTotal = gradeTotal + grades[i].score
+  }
 }
 
 module.exports = {
   grades,
+  calculateTotalGrade
 }
