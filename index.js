@@ -16,7 +16,7 @@
         
         Declare and initialize an array named `grades`
  */
-const studentGrades = [
+const grades = [
     { assignmentName: 'Assignment 01', studentName: 'Ben', score: 50 },
     { assignmentName: 'Assignment 02', studentName: 'Jerry', score: 80 },
     { assignmentName: 'Assignment 02', studentName: 'Ben', score: 95 },
@@ -46,8 +46,21 @@ const studentGrades = [
        Update `gradeTotal` so it increases value for each item in the array
 
 */
-const gradeTotal = 0
 
+/* let gradeTotal = 0
+for (const index in grades) {
+    // destructuring score
+    const {score } = grades[index]
+    console.log({score})
+    gradeTotal += gradeTotal
+}
+console.log({gradeTotal}) */
+
+gradeTotal = 0
+grades.forEach( grade => {
+    gradeTotal += grade.score
+})
+console.log( {gradeTotal} )
 
 /**
  

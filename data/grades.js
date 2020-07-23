@@ -1,1 +1,1 @@
-const grades = require('./data/index')
+const { grades } = require('./index.js')
