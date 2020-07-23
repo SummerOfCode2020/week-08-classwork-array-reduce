@@ -4,11 +4,11 @@ let grades = [{
     score: 86
 }, {
     assignmentName: 'Assignment02',
-    studentName: 'Spencer',
+    studentName: 'Geneva',
     score: 71
 }, {
     assignmentName: 'Assignment03',
-    studentName: 'John',
+    studentName: 'Seven',
     score: 90
 }, {
     assignmentName: 'Assignment04',
@@ -16,11 +16,11 @@ let grades = [{
     score: 99
 }, {
     assignmentName: 'Assignment05',
-    studentName: 'Derrik',
+    studentName: 'Seven',
     score: 62
 }, {
     assignmentName: 'Assignment06',
-    studentName: 'Paul',
+    studentName: 'Geneva',
     score: 87
 }];
 
