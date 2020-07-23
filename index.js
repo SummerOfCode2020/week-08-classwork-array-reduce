@@ -30,6 +30,8 @@
 
  */
 
+const { grades } = require('./data/grades')
+
  /**
 
     Looping using your preferred looping syntax and updating a shared variable
