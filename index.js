@@ -38,12 +38,15 @@
        Update `gradeTotal` so it increases value for each item in the array
 
 */
-const gradeTotal = 0
+const { grades } = require('./data/grades')
 
-for (let i = 0; i < grades.length; i++) {
-    return gradeTotal.push(grades[i] + grades[i])
+let gradeTotal = 0
+
+function makeGrades(grading) {
+    for (let i = 0; i < grades.length; i++) {
+        return gradeTotal.push(grades[i] + grades[i])
+    }
 }
-
 /**
  
    Using reduce
