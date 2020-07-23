@@ -47,13 +47,6 @@
   gradeTotal = null
 
 
-  let { grades } = require('./data/grades')
+  let gradesData = require('/data/grades')
 
-function totalGrade(grades) {
-  for (let i = 0; i < grades.length; i++) {
-    if(gradeTotal isNaN) {
-      gradeTotal = 0;
-      gradeTotal = gradeTotal + grades[i].score
-    }
-  }
-}
+gradeTotal = calculateTotalGrade
