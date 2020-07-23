@@ -38,7 +38,18 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
+const grades = require ('./data/grades')
+
+function forLoopAdd(array){
+     let gradeTotal = 0
+     array.forEach(grade => {
+         gradeTotal += grade.score
+     })
+     return gradeTotal
+}
+
+console.log(forLoopAdd(grades))
+
 
 
  /**

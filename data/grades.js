@@ -1,4 +1,4 @@
-modules.exports = [
+module.exports = [
     {
         assignmentName: 'Assignment 1',
         studentName: 'Tito',
