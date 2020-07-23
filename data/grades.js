@@ -1,7 +1,3 @@
-assignmentName
-studentName
-score
-
 let grades = [{
     assignmentName: 'Array Reverser',
     studentName: 'Peter',
@@ -23,3 +19,5 @@ let grades = [{
     studentName: 'Jessica',
     score: 98
 }]
+
+module.exports = { grades }
