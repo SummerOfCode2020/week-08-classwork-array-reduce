@@ -15,7 +15,15 @@
         Create a new file named "grades.js" to import in the data folder
         
         Declare and initialize an array named `grades`
-    
+ */
+const grades = [
+    { assignmentName: 'Assignment 01', studentName: 'Ben', score: 50 },
+    { assignmentName: 'Assignment 02', studentName: 'Jerry', score: 80 },
+    { assignmentName: 'Assignment 02', studentName: 'Ben', score: 95 },
+    { assignmentName: 'Assignment 03', studentName: 'Jerry', score: 100 },
+    { assignmentName: 'Assignment 01', studentName: 'Ben', score: 70 }
+]
+/**
         Include at least 5 object items in the array 
         
         Each object will have properties of
@@ -25,29 +33,33 @@
 
         Values are important for this lesson.
 
-            - Use 2 distinct assignment names
-            - Use 2 distinct student names
+            - Use distinct assignment names
+            - Use only 2 distinct student names
 
  */
 
- /**
+/**
 
-    Looping using your preferred looping syntax and updating a shared variable
+   Looping using your preferred looping syntax and updating a shared variable
  
-    2) Loop through the grades data using a for loop.
-        Update `gradeTotal` so it increases value for each item in the array
+   2) Loop through the grades data using a for loop.
+       Update `gradeTotal` so it increases value for each item in the array
 
+*/
+const gradeTotal = 0
+
+
+/**
+ 
+   Using reduce
+
+   3) Use Array reduce to do the same total calculation logic
+
+       Replace `null` below with the use of `reduce`
+ 
  */
- const gradeTotal = 0
+gradeTotal = null
 
-
- /**
- 
-    Using reduce
-
-    3) Use Array reduce to do the same total calculation logic
-
-        Replace `null` below with the use of `reduce`
- 
-  */
-  gradeTotal = null
+module.exports = {
+    grades
+}
