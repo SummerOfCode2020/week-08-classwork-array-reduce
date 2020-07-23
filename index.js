@@ -50,8 +50,6 @@ function forLoopAdd(array){
 
 console.log(forLoopAdd(grades))
 
-
-
  /**
  
     Using reduce
@@ -61,4 +59,6 @@ console.log(forLoopAdd(grades))
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+
+  gradeTotal = grades.reduce((acc, grade) => acc + grade.score, 0)
+  console.log(gradeTotal)
