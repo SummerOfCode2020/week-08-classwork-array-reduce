@@ -37,3 +37,5 @@ let grades = [{
   studentName: 'Adrian',
   score: 89
 }]
+
+module.exports = {grades}
