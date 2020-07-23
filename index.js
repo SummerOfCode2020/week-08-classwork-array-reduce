@@ -29,7 +29,8 @@
             - Use 2 distinct student names
 
  */
-
+    let { grades } = require('./data/grades')
+    // console.log(grades)
  /**
 
     Looping using your preferred looping syntax and updating a shared variable
@@ -38,8 +39,11 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
 
+
+ let gradeTotal = 0
+ grades.forEach(grade => gradeTotal += grade.score)
+ // console.log(gradeTotal)
 
  /**
  
@@ -50,4 +54,7 @@
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+   gradeTotal = grades.reduce((acc, grade) => {
+    return acc + grade.score
+  }, 0)
+  console.log(gradeTotal) 
