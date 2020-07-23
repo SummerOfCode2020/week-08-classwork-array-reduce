@@ -25,10 +25,14 @@
 
         Values are important for this lesson.
 
-            - Use 2 distinct assignment names
-            - Use 2 distinct student names
+            - Use distinct assignment names
+            - Use only 2 distinct student names
 
  */
+ const { grades } = require('./data/grades')
+
+console.log({ grades })
+
 
  /**
 
@@ -38,7 +42,32 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
+ // expect this to be the sum of all my `total` values
+let gradeTotal = 0
+
+// option 1
+for (const index in grades) {
+    const { score } = grades[index]
+    console.log({ score })
+    gradeTotal += score
+}
+console.log( {gradeTotal} )
+
+// option 2
+gradeTotal = 0
+for (const index in grades) {
+    const grade = grades[index]
+    gradeTotal += grade.score
+}
+console.log( {gradeTotal} )
+
+// option 3
+gradeTotal = 0
+grades.forEach( (grade) => {
+    gradeTotal += grade.score
+})
+console.log( {gradeTotal} )
+
 
 
  /**
