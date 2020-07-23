@@ -29,6 +29,9 @@
             - Use 2 distinct student names
 
  */
+const { grades } = require("./data.js/grades")
+
+console.log( {grades} )
 
  /**
 
@@ -38,8 +41,17 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
+// expect gradeTotal = 411
 
+ let gradeTotal = 0
+
+ for (let i = 0; i < grades.length; i++) {
+     gradeTotal += grades[i].score
+ }
+ console.log( {gradeTotal} )
+
+
+ 
 
  /**
  
@@ -50,4 +62,4 @@
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+ gradeTotal = null
