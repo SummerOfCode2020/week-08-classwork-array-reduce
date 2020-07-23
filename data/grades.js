@@ -31,10 +31,10 @@ let grades = [
   }
 ]
 
-const calculateTotalGrade = for(let i = 0; i < grades.length; i++) {
+const calculateTotalGrade = for(grade in grades) {
   if(gradeTotal isNaN || gradeTotal >= 0) {
     gradeTotal = 0;
-    gradeTotal = gradeTotal + grades[i].score
+    gradeTotal = gradeTotal + grade.score
   }
 }
 
