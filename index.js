@@ -47,7 +47,7 @@
   gradeTotal = null
 
 
-  let grades = require('/data/grades')
+  let { grades } = require('./data/grades')
 
 function totalGrade(grades) {
   for (let i = 0; i < grades.length; i++) {
