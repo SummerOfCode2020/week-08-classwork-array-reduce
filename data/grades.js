@@ -32,7 +32,7 @@ let grades = [
 ]
 
 const calculateTotalGrade = for(let i = 0; i < grades.length; i++) {
-  if(gradeTotal isNaN) {
+  if(gradeTotal isNaN || gradeTotal >= 0) {
     gradeTotal = 0;
     gradeTotal = gradeTotal + grades[i].score
   }
