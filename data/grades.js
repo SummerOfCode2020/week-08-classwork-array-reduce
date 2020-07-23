@@ -1,30 +1,30 @@
 grades = [{
-    assignmentName: Assignment01,
-    studentName: Timmy,
+    assignmentName: 'Assignment01',
+    studentName: 'Timmy',
     score: 90
 },
 {
-    assignmentName: Assignment01,
-    studentName: Zoey,
+    assignmentName: 'Assignment01',
+    studentName: 'Zoey',
     score: 95
 },
 {
-    assignmentName: Assignment02,
-    studentName: Timmy,
+    assignmentName: 'Assignment02',
+    studentName: 'Timmy',
     score: 85
 },
 {
-    assignmentName: Assignment02,
-    studentName: Zoey,
+    assignmentName: 'Assignment02',
+    studentName: 'Zoey',
     score: 70
 },
 {
-    assignmentName: Assignment03,
-    studentName: Barry,
+    assignmentName: 'Assignment03',
+    studentName: 'Zoey',
     score: 100
 },
 {
-    assignmentName: Assignment03,
-    studentName: Timmy,
+    assignmentName: 'Assignment03',
+    studentName: 'Timmy',
     score: 60
 }]
