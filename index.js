@@ -29,25 +29,25 @@
             - Use 2 distinct student names
 
  */
+const { grades } = require('./data/grades')
+/**
 
- /**
-
-    Looping using your preferred looping syntax and updating a shared variable
+   Looping using your preferred looping syntax and updating a shared variable
  
-    2) Loop through the grades data using a for loop.
-        Update `gradeTotal` so it increases value for each item in the array
+   2) Loop through the grades data using a for loop.
+       Update `gradeTotal` so it increases value for each item in the array
 
+*/
+
+
+
+/**
+ 
+   Using reduce
+
+   3) Use Array reduce to do the same total calculation logic
+
+       Replace `null` below with the use of `reduce`
+ 
  */
- const gradeTotal = 0
-
-
- /**
- 
-    Using reduce
-
-    3) Use Array reduce to do the same total calculation logic
-
-        Replace `null` below with the use of `reduce`
- 
-  */
-  gradeTotal = null
+gradeTotal = null
