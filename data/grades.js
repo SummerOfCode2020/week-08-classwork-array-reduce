@@ -38,4 +38,4 @@ let grades = [{
   score: 89
 }]
 
-module.exports = {grades}
+module.exports = { grades }

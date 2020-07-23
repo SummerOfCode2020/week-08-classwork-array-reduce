@@ -38,8 +38,20 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
+const { grades } = require ( './data/grades' )
 
+console.log({ grades })
+ let gradeTotal = 0
+
+ function calculateTotalGrades(grades) {
+    for(let i = 0; i < grades.length; i++)  {                         
+    gradeTotal = gradeTotal + grades[i].score
+    console.log({gradeTotal})
+}
+return gradeTotal
+}
+
+console.log(calculateTotalGrades(grades))
 
  /**
  
@@ -50,4 +62,4 @@
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+
