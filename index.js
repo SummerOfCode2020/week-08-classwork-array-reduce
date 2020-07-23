@@ -11,13 +11,10 @@
     Referencing code in other files
 
     1)  Please read all instructions first!
+        Create a new file named "grades.js" to import in the data folder - complete!
+        Declare and initialize an array named `grades` - complete!
 
-        Create a new file named "grades.js" to import in the data folder
-        
-        Declare and initialize an array named `grades`
-    
-        Include at least 5 object items in the array 
-        
+        Include at least 5 object items in the array
         Each object will have properties of
             - `assignmentName`  with string values such as "Assignment 01"
             - `studentName` with string values such as "Tito"
@@ -33,7 +30,7 @@
  /**
 
     Looping using your preferred looping syntax and updating a shared variable
- 
+
     2) Loop through the grades data using a for loop.
         Update `gradeTotal` so it increases value for each item in the array
 
@@ -42,12 +39,14 @@
 
 
  /**
- 
     Using reduce
-
     3) Use Array reduce to do the same total calculation logic
-
         Replace `null` below with the use of `reduce`
- 
+
   */
   gradeTotal = null
+
+
+  let gradesData = require('/data/grades')
+
+gradeTotal = calculateTotalGrade
