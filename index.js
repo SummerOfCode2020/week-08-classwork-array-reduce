@@ -58,8 +58,15 @@ console.log({gradeTotal})
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = grades.reduce((total, grade) => {
+
+let titosGrades = grades.filter((grade) => {
+    return grade.studentName === 'Tito'
+})
+console.log({titosGrades})
+
+  titosTotal = titosGrades.reduce((total, grade) => {
       console.log(total, grade)
       return total + grade.score
   }, 0)
-console.log(gradeTotal)
+
+console.log(titosTotal)
