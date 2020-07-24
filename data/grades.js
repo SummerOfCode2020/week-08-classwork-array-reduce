@@ -31,14 +31,7 @@ let grades = [
   }
 ]
 
-const calculateTotalGrade = for(grade in grades) {
-  if(gradeTotal isNaN || gradeTotal >= 0) {
-    gradeTotal = 0;
-    gradeTotal = gradeTotal + grade.score
-  }
-}
 
 module.exports = {
-  grades,
-  calculateTotalGrade
+  grades
 }
