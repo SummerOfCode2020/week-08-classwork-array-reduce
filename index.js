@@ -40,18 +40,40 @@
  */
 const { grades } = require ( './data/grades' )
 
-console.log({ grades })
- let gradeTotal = 0
+// console.log({ grades })
+//  let gradeTotal = 0
 
- function calculateTotalGrades(grades) {
-    for(let i = 0; i < grades.length; i++)  {                         
-    gradeTotal = gradeTotal + grades[i].score
-    console.log({gradeTotal})
-}
-return gradeTotal
-}
+//  function calculateTotalGrades(grades) {
+//     for(let i = 0; i < grades.length; i++)  {                         
+//     gradeTotal = gradeTotal + grades[i].score
+//     console.log({gradeTotal})
+// }
+// return gradeTotal
+// }
 
-console.log(calculateTotalGrades(grades))
+// console.log(calculateTotalGrades(grades))
+
+// //opt 1
+// for (const index in grades){
+//     const { score } = grades[index]
+//     console.log({ score })
+//     gradeTotal += score
+// }
+
+// // opt 2
+
+// gradeTotal = 0
+// for (const index in grades) {
+//     const grade = grades[index]
+//     gradeTotal += grade.score
+// }
+
+// // opt 3
+// gradeTotal = 0
+// grades.forEach( (grade) =>{
+//     gradeTotal += grade.score
+// })
+
 
  /**
  
@@ -63,3 +85,10 @@ console.log(calculateTotalGrades(grades))
  
   */
 
+let gradeTotal = 0
+gradeTotal = grades.reduce((total, grade) =>{
+    total+= grade.score
+    return total
+} , 0 )
+
+console.log(gradeTotal)

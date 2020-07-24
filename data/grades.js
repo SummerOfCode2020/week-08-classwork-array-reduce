@@ -15,27 +15,27 @@
 let grades = [{
   assignmentName: 'Assignment 01', 
   studentName: 'Annabelle',
-  score: 90 
+  score: 50 
 }, { 
   assignmentName: 'Assignment 01',
   studentName: 'Adrian',
-  score: 86
+  score: 25
 }, {
   assignmentName: 'Assignment 02',
   studentName: 'Annabelle',
-  score: 91
+  score: 10
 }, {
   assignmentName: 'Assignment 02',
   studentName: 'Adrian',
-  score: 84
+  score: 5
 }, {
   assignmentName: 'Assignment 03',
   studentName: 'Annabelle',
-  score: 87
+  score: 10
 }, {
   assignmentName: 'Assignment 03',
   studentName: 'Adrian',
-  score: 89
+  score: 100
 }]
 
 module.exports = { grades }
