@@ -32,7 +32,7 @@
 
 const { grades } = require('./data/grades')
 
-console.log({ grades })
+
 
  /**
 
@@ -44,7 +44,7 @@ console.log({ grades })
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- gradeTotal = 0
+let gradeTotal = 0
 grades.forEach( (grade) => {
     gradeTotal += grade.score
 })
@@ -59,9 +59,13 @@ console.log( {gradeTotal} )
  
   */
 
-function totalGrade(grades) {
-    return grades.reduce((acc, cur) => { return acc = acc + grades.score }, 0)
-}
-return totalGrade
+// function totalGrade(grades) {
+//     return grades.reduce((acc, grade) => { return acc = acc + grade.score }, 0)
+// }
+// 
 
-  gradeTotal = null
+gradeTotal = grades.reduce( (total, grade) => {
+    console.log(total)
+    return total + grade.score
+    
+}, 0 )
