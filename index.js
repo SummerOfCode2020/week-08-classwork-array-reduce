@@ -69,3 +69,5 @@ gradeTotal = grades.reduce( (total, grade) => {
     return total + grade.score
     
 }, 0 )
+
+console.log ({gradeTotal})
