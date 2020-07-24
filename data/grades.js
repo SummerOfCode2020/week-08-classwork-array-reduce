@@ -1,0 +1,1 @@
+const { grades } = require('./index.js')
