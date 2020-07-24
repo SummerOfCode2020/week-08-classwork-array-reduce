@@ -30,7 +30,7 @@
 
  */
 
-const grades = require("./data/grades")
+const { grades } = require("./data/grades")
 
  /**
 
@@ -44,6 +44,14 @@ const grades = require("./data/grades")
 for(let i = 0; i < grades.length; i++) {
     gradeTotal += grades[i].score
 }
+// from JR, for reference
+console.log({gradeTotal})
+gradeTotal = 0
+for (const i in grades) {
+    const { score } = grades[i]
+    console.log({score})
+    gradeTotal += score
+}
 console.log({gradeTotal})
 
  /**
@@ -55,4 +63,15 @@ console.log({gradeTotal})
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+
+gradeTotal = grades.reduce(function (acumulator, item) {
+    return acumulator + item.score
+},0 )
+
+console.log({gradeTotal})
+
+gradeTotal = grades.reduce( (total, grade) => {
+    return total + grade.score
+}, 0 )
+
+console.log({gradeTotal})

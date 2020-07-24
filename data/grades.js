@@ -7,4 +7,4 @@ const grades = [
     {assignmentName: 'assignment 06', studentName: 'Betty', score: 78} 
 ]
 
-module.exports = grades
+module.exports = { grades }
