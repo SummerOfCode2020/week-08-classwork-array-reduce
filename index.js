@@ -90,6 +90,8 @@ grades.forEach(grade => {
 
 
 gradeTotal = grades.reduce((total, grade) => {
-    grades.score += grades.score
-    console.log(total, grade);
+    console.log(total, grade)
+    return total + grade.score
 }, 0)
+
+console.log(gradeTotal)
