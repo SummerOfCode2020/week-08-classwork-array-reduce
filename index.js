@@ -87,3 +87,14 @@ function totalGrades(grades) {
 }
 
 console.log(totalGrades(grades))
+
+function totalGradesAlt(grades) {
+    const gradeTotal = grades.reduce((total, grade) => {
+        console.log(total, grade)
+        const { score } = grade
+        return total + score
+    }, 0)
+    return gradeTotal
+}
+
+console.log(totalGradesAlt(grades))
