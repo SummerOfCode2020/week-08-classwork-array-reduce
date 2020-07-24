@@ -55,12 +55,13 @@ for (const index in grades) {
     gradeTotal += gradeTotal
 }
 console.log({gradeTotal}) */
-
+/* 
 gradeTotal = 0
 grades.forEach( grade => {
     gradeTotal += grade.score
-})
-console.log( {gradeTotal} )
+console.log( {gradeTotal} ) */
+
+
 
 /**
  
@@ -71,7 +72,12 @@ console.log( {gradeTotal} )
        Replace `null` below with the use of `reduce`
  
  */
-gradeTotal = null
+let gradeTotal = grades.reduce((total, grade) => {
+    //use console.log to make sure you are looking at the correct variables/properties
+    console.log(total, grade)
+    total += grade.score
+    return total
+}, 0)
 
 module.exports = {
     grades
