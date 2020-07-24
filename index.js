@@ -30,6 +30,8 @@
 
  */
 
+const { grades } = require("./data/grades")
+
  /**
 
     Looping using your preferred looping syntax and updating a shared variable
@@ -38,8 +40,19 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
-
+ let gradeTotal = 0
+for(let i = 0; i < grades.length; i++) {
+    gradeTotal += grades[i].score
+}
+// from JR, for reference
+console.log({gradeTotal})
+gradeTotal = 0
+for (const i in grades) {
+    const { score } = grades[i]
+    console.log({score})
+    gradeTotal += score
+}
+console.log({gradeTotal})
 
  /**
  
@@ -50,4 +63,15 @@
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+
+gradeTotal = grades.reduce(function (acumulator, item) {
+    return acumulator + item.score
+},0 )
+
+console.log({gradeTotal})
+
+gradeTotal = grades.reduce( (total, grade) => {
+    return total + grade.score
+}, 0 )
+
+console.log({gradeTotal})
