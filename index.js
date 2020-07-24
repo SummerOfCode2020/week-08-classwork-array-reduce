@@ -35,7 +35,7 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
+ let gradeTotal = 0
 
 
  /**
