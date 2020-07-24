@@ -64,10 +64,8 @@ console.log(forLoopAdd(grades))
 gradeTotal = grades.reduce((acc, grade) => acc + grade.score, 0)
 console.log(gradeTotal)
 
-function recursionAdd(array){
-    if(!array.length){return 0}
-
-    [value, ...rest] = array
+function recursionAdd([value, ...rest]){
+    if(!rest.length){return value.score}
 
     return value.score + recursionAdd(rest)
 }
