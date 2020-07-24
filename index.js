@@ -30,24 +30,44 @@
 
  */
 
- /**
+/**
 
-    Looping using your preferred looping syntax and updating a shared variable
- 
-    2) Loop through the grades data using a for loop.
-        Update `gradeTotal` so it increases value for each item in the array
+   Looping using your preferred looping syntax and updating a shared variable
+
+   2) Loop through the grades data using a for loop.
+       Update `gradeTotal` so it increases value for each item in the array
+
+*/
+const grades = require('./data/grades')
+
+function forLoopAdd(array) {
+    let gradeTotal = 0
+    array.forEach(grade => {
+        gradeTotal += grade.score
+    })
+    return gradeTotal
+}
+
+console.log(forLoopAdd(grades))
+
+
+/**
+
+   Using reduce
+
+   3) Use Array reduce to do the same total calculation logic
+
+       Replace `null` below with the use of `reduce`
 
  */
- const gradeTotal = 0
 
+gradeTotal = grades.reduce((acc, grade) => acc + grade.score, 0)
+console.log(gradeTotal)
 
- /**
- 
-    Using reduce
+function recursionAdd([value, ...rest]){
+    if(!rest.length){return value.score}
 
-    3) Use Array reduce to do the same total calculation logic
+    return value.score + recursionAdd(rest)
+}
 
-        Replace `null` below with the use of `reduce`
- 
-  */
-  gradeTotal = null
+console.log(recursionAdd(grades))
