@@ -40,22 +40,56 @@
 */
 const { grades } = require('./data/grades')
 
+/*
 let gradeTotal = 0
 
-function makeGrades(grading) {
-    for (let i = 0; i < grades.length; i++) {
-        gradeTotal = grades.score += grades[i]
-    }
+for (let i = 0; i < grades.length; i++) {
+    gradeTotal = grades.score += grades[i]
 }
 
+
 console.log(grades, gradeTotal)
+
+*/
+
+// for In
+/*
+for (const index in grades) {
+    const { score } = grades[index]
+    console.log({ score })
+    gradeTotal += score
+}
+*/
+
+
+
+
+// forEach
+/*
+let gradeTotal = 0;
+
+gradeTotal.forEach(grade => grades.score += grades.score)
+*/
+/*
+gradeTotal = 0
+grades.forEach(grade => {
+    gradeTotal += grade.score
+})
+*/
+
+// 
+
 /**
  
    Using reduce
-
    3) Use Array reduce to do the same total calculation logic
-
-       Replace `null` below with the use of `reduce`
+   Replace `null` below with the use of `reduce`
  
  */
-gradeTotal = null
+
+
+
+gradeTotal = grades.reduce((total, grade) => {
+    grades.score += grades.score
+    console.log(total, grade);
+}, 0)
