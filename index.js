@@ -62,4 +62,9 @@ console.log( {grades} )
         Replace `null` below with the use of `reduce`
  
   */
- gradeTotal = null
+ gradeTotal = grades.reduce( (total, grade) => {
+     console.log(total, grade)
+     return total + grade.score
+ }, 0 )
+
+ console.log(gradeTotal)
