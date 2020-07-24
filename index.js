@@ -35,9 +35,9 @@ let grades =[{assignmentName: "week01", studentName: "James", score: 10},
 ,           {assignmentName: "week04", studentName: "Mathieu", score:40},
             {assignmentName: "week05", studentName: "paul", score: 50}]
             
-console.log({grade})
+//console.log({grade}) 
  
-  let { grades } = require(`./data/grades`)
+  //let { grades } = require(`./data/grades`)
 
             /**
 co
@@ -47,16 +47,22 @@ co
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
+ let gradeTotal = 0
  
 
- for (let i= 0; i > grades.length; i++ ) {
+ for (let i= 0; i < grades.length; i++ ) {
     
   
-   gradeTotal += grade.score[i]
+   gradeTotal += grades[i].score
  }
- console. log({gradeTotal})
+ console.log({gradeTotal})
+ gradeTotal = grades.reduce( (total, grade)=> {
+     console.log(total, grade)
+     return total
+ }, 0)
  /**
+  * 
+  * 
  
     Using reduce
 
