@@ -29,25 +29,72 @@
             - Use 2 distinct student names
 
  */
+const { grades } = require('./data/grades')
 
- /**
+// console.log({ grades })
+/**
 
-    Looping using your preferred looping syntax and updating a shared variable
+   Looping using your preferred looping syntax and updating a shared variable
  
-    2) Loop through the grades data using a for loop.
-        Update `gradeTotal` so it increases value for each item in the array
+   2) Loop through the grades data using a for loop.
+       Update `gradeTotal` so it increases value for each item in the array
 
+*/
+// expect gradeTotal = 500
+function totalGrades(grades) {
+    let gradeTotal = 0
+    grades.forEach((grade) => {
+        const { score } = grade
+        gradeTotal += score
+    })
+    return gradeTotal
+}
+
+console.log(totalGrades(grades))
+
+// add in for...in loop option 1
+gradeTotal = 0
+
+for (const index in grades) {
+    const { score } = grades[index]
+    console.log({ score })
+    gradeTotal += score
+}
+console.log({ gradeTotal })
+
+gradeTotal = 0
+
+for (const index in grades) {
+    const grade = grades[index]
+    gradeTotal += grade.score
+}
+console.log({ gradeTotal })
+/**
+ 
+   Using reduce
+
+   3) Use Array reduce to do the same total calculation logic
+
+       Replace `null` below with the use of `reduce`
+ 
  */
- const gradeTotal = 0
+function totalGrades(grades) {
+    const gradeTotal = grades.reduce((total, grade) => {
+        console.log(total, grade)
+        return total + grade.score
+    }, 0)
+    return gradeTotal
+}
 
+console.log(totalGrades(grades))
 
- /**
- 
-    Using reduce
+function totalGradesAlt(grades) {
+    const gradeTotal = grades.reduce((total, grade) => {
+        console.log(total, grade)
+        const { score } = grade
+        return total + score
+    }, 0)
+    return gradeTotal
+}
 
-    3) Use Array reduce to do the same total calculation logic
-
-        Replace `null` below with the use of `reduce`
- 
-  */
-  gradeTotal = null
+console.log(totalGradesAlt(grades))
