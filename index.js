@@ -71,3 +71,6 @@ function recursionAdd([value, ...rest]){
 }
 
 console.log(recursionAdd(grades))
+
+let titoGrades = grades.filter(grade => grade.studentName === 'Tito').reduce((a, grade) => a+ grade.score, 0)
+console.log(titoGrades)
