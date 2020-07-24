@@ -49,4 +49,6 @@
 
   let { grades } = require('./data/grades')
 
-gradeTotal = grades.reduce((total, grade) => { total += grade })
+gradeTotal = grades.reduce((total, grade) => { 
+    return total += grade 
+})
