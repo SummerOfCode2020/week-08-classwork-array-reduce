@@ -31,7 +31,7 @@
  */
 const { grades } = require('./data/grades')
 
-console.log({ grades })
+// console.log({ grades })
 /**
 
    Looping using your preferred looping syntax and updating a shared variable
@@ -78,4 +78,12 @@ console.log({ gradeTotal })
        Replace `null` below with the use of `reduce`
  
  */
-gradeTotal = null
+function totalGrades(grades) {
+    const gradeTotal = grades.reduce((total, grade) => {
+        console.log(total, grade)
+        return total + grade.score
+    }, 0)
+    return gradeTotal
+}
+
+console.log(totalGrades(grades))
