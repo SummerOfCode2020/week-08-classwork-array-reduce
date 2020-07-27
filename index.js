@@ -29,7 +29,8 @@
             - Use 2 distinct student names
 
  */
-
+const { grades } = require('./data/grades')
+console.log({grades})
  /**
 
     Looping using your preferred looping syntax and updating a shared variable
@@ -38,9 +39,16 @@
         Update `gradeTotal` so it increases value for each item in the array
 
  */
- const gradeTotal = 0
+let gradeTotal = 0
+
+for (const index in grades) {
+    const grade = grades[index]
+    gradeTotal += grade.score
+}
 
 
+//expect gradeTotal = 429
+console.log({gradeTotal})
  /**
  
     Using reduce
@@ -50,4 +58,15 @@
         Replace `null` below with the use of `reduce`
  
   */
-  gradeTotal = null
+
+let titosGrades = grades.filter((grade) => {
+    return grade.studentName === 'Tito'
+})
+console.log({titosGrades})
+
+  titosTotal = titosGrades.reduce((total, grade) => {
+      console.log(total, grade)
+      return total + grade.score
+  }, 0)
+
+console.log(titosTotal)
